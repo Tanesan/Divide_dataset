@@ -33,13 +33,10 @@ X_train_norm = mms.fit_transform(X_train)
 ### テストデータをスケーリング
 ``` python
 X_test_norm = mms.transform(X_test)
-```  
-インスタンス
-``` python
-stdsc = StandardScaler()
 ```
 ### 平均0 標準偏差1に変換
 ``` python
+stdsc = StandardScaler()
 X_train_std = stdsc.fit_transform(X_train)
 X_test_std = stdsc.transform(X_test)
 ```
